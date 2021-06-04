@@ -9,14 +9,14 @@ Allows for k8s Deployments to get restarted automatically on changes to the asso
 * Terraform >= 0.15
 * Providers:
   * `kubernetes` >= 2.0
-  * `null` >= 3.0
+  * `random` >= 3.0
 
 ## Usage
 
 ```terraform
 module "myapp_envs_configmap" {
   source  = "webyneter/unique-configmaps/kubernetes"
-  version = "0.1.0"
+  version = "VERSION"
 
   configmap_data = local.myapp_envs
   configmap_name_prefix = "myapp"
@@ -28,7 +28,7 @@ module "myapp_envs_configmap" {
 ## Inputs
 
 | Name | Description | Type | Default | Required |
-|------|-------------|------|---------|:--------:|
+|------|-------------|:----:|:-------:|:--------:|
 | `configmap_name_prefix` | The ConfigMap name prefix | `string` | n/a | **yes** |
 | `configmap_data_scope` | The logical scope of the ConfigMap data | `string` | n/a | **yes** |
 | `configmap_namespace` | The ConfigMap namespace | `string` | n/a | **yes** |
