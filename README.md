@@ -44,4 +44,4 @@ module "myapp_envs_configmap" {
 
 | Name | Description |
 |------|-------------|
-| `name` | The resulting ConfigMap name |
+| `name` | The ConfigMap name |
