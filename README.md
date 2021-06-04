@@ -1,6 +1,6 @@
 # terraform-kubernetes-unique-configmaps
 
-A Terraform module for creating Kubernetes ConfigMaps that change their names when the underlying data changes.
+A [Terraform module](https://registry.terraform.io/modules/webyneter/unique-configmaps/kubernetes/latest) for creating Kubernetes ConfigMaps that change their names when the underlying data changes.
 
 Allows for k8s Deployments to get restarted automatically on changes to the associated ConfigMap.
 
@@ -15,7 +15,7 @@ Allows for k8s Deployments to get restarted automatically on changes to the asso
 
 ```terraform
 module "myapp_envs_configmap" {
-  source = "webyneter/terraform-kubernetes-unique-configmaps"
+  source  = "webyneter/unique-configmaps/kubernetes"
   version = "0.1.0"
 
   configmap_data = local.myapp_envs
@@ -45,3 +45,11 @@ module "myapp_envs_configmap" {
 | Name | Description |
 |------|-------------|
 | `name` | The ConfigMap name |
+
+## Authorship
+
+Authored and maintained by [Nikita Shupeyko](https://github.com/webyneter).
+
+## License
+
+Released under [MIT License](./LICENSE).
