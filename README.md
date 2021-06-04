@@ -29,16 +29,16 @@ module "myapp_envs_configmap" {
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| `configmap\_name\_prefix` | The ConfigMap name prefix | `string` | n/a | **yes** |
-| `configmap\_data\_scope` | The logical scope of the ConfigMap data | `string` | n/a | **yes** |
-| `configmap\_namespace` | The ConfigMap namespace | `string` | n/a | **yes** |
-| `configmap\_data` | The ConfigMap data | `map` | n/a | **yes** |
-| `configmap\_annotations` | The ConfigMap annotations | `map` | `{}` | no |
-| `configmap\_labels` | The ConfigMap labels | `map` | `{}` | no |
-| `configmap\_binary\_data` | The ConfigMap binary data | `map` | `{}` | no |
-| `randomid\_prefix` | The random\_id resource prefix | `string` | `""` | no |
-| `randomid\_suffix\_byte\_length` | The random\_id resource byte length | `int` | `4` | no |
-| `randomid\_delimiter` | The delimiter used by the random\_id resource when constructing a trigger | `string` | `"|"` | no |
+| `configmap_name_prefix` | The ConfigMap name prefix | `string` | n/a | **yes** |
+| `configmap_data_scope` | The logical scope of the ConfigMap data | `string` | n/a | **yes** |
+| `configmap_namespace` | The ConfigMap namespace | `string` | n/a | **yes** |
+| `configmap_data` | The ConfigMap data | `map` | n/a | **yes** |
+| `configmap_annotations` | The ConfigMap annotations | `map` | `{}` | no |
+| `configmap_labels` | The ConfigMap labels | `map` | `{}` | no |
+| `configmap_binary_data` | The ConfigMap binary data | `map` | `{}` | no |
+| `randomid_prefix` | The random_id resource prefix | `string` | `""` | no |
+| `randomid_suffix_byte_length` | The random_id resource byte length | `int` | `4` | no |
+| `randomid_delimiter` | The delimiter used by the random_id resource when constructing a trigger | `string` | `"|"` | no |
 
 ## Outputs
 
