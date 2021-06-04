@@ -6,9 +6,9 @@ terraform {
       source  = "hashicorp/kubernetes"
       version = ">= 2.0"
     }
-    null = {
-      # https://registry.terraform.io/providers/hashicorp/null/latest/docs
-      source  = "hashicorp/null"
+    random = {
+      # https://registry.terraform.io/providers/hashicorp/random/latest/docs
+      source  = "hashicorp/random"
       version = ">= 3.0"
     }
   }
