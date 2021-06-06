@@ -11,7 +11,7 @@ resource "random_id" "unique" {
 resource "kubernetes_config_map" "unique" {
   # https://registry.terraform.io/providers/hashicorp/kubernetes/latest/docs/resources/config_map
   metadata {
-    name        = "${var.configmap_name_prefix}-${var.configmap_data_scope}-configmap-${random_id.unique.hex}"
+    name        = "${local.configmap_first_name}${local.configmap_middle_name}${local.configmap_name_designator}${random_id.unique.hex}"
     namespace   = var.configmap_namespace
     annotations = var.configmap_annotations
     labels      = var.configmap_labels
