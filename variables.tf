@@ -1,3 +1,7 @@
+# ==================
+# Required variables
+# ==================
+
 variable "configmap_first_name" {
   description = "The ConfigMap name prefix"
 }
@@ -13,6 +17,10 @@ variable "configmap_namespace" {
 variable "configmap_data" {
   description = "The ConfigMap data"
 }
+
+# ==================
+# Optional variables
+# ==================
 
 variable "configmap_name_delimiter" {
   description = "The character separating the parts of the ConfigMap name"
